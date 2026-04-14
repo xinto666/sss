@@ -1,17 +1,35 @@
-<div style={{ height: '600px', position: 'relative' }}>
-  <ReflectiveCard
-    overlayColor="rgba(0, 0, 0, 0.2)"
-    blurStrength={12}
-    glassDistortion={30}
-    metalness={1}
-    roughness={0.75}
-    displacementStrength={20}
-    noiseScale={1}
-    specularConstant={5}
-    grayscale={0.15}
-    color="#ffffff"
-  />
+<!-- From Uiverse.io by byllzz --> 
+<div class="wheel-selector">
+  <div class="hint-pop">TAP TO SPIN</div>
+  <div class="radio-input">
+    <label for="value-2" class="next-trigger" id="trigger-for-1"></label>
+    <label for="value-3" class="next-trigger" id="trigger-for-2"></label>
+    <label for="value-1" class="next-trigger" id="trigger-for-3"></label>
+
+    <div class="glass-overlay"></div>
+
+    <input
+      value="value-1"
+      name="value-radio"
+      id="value-1"
+      type="radio"
+      checked=""
+    />
+    <label class="wheel-label" for="value-1" style="--angle: -30deg">
+      <span class="num">01</span>
+      <span class="label">PRIME</span>
+    </label>
+
+    <input value="value-2" name="value-radio" id="value-2" type="radio" />
+    <label class="wheel-label" for="value-2" style="--angle: 0deg">
+      <span class="num">02</span>
+      <span class="label">SELECT</span>
+    </label>
+
+    <input value="value-3" name="value-radio" id="value-3" type="radio" />
+    <label class="wheel-label" for="value-3" style="--angle: 30deg">
+      <span class="num">03</span>
+      <span class="label">GEY</span>
+    </label>
+  </div>
 </div>
-    </script>
-</body>
-</html
